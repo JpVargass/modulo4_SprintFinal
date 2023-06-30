@@ -21,7 +21,7 @@ private ActivitySecondBinding binding;
 binding.btnLinkedin.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-         String linkedinUrl ="www.linkedin.com/in/juanpablovargassoto";
+         String linkedinUrl ="https://www.linkedin.com/in/juanpablovargassoto/";
          Uri uri = Uri.parse(linkedinUrl);
         Intent intent = new Intent(Intent.ACTION_VIEW,uri);
         startActivity(intent);
