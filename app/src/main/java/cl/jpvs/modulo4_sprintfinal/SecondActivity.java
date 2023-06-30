@@ -27,7 +27,17 @@ binding.btnLinkedin.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
+binding.btnLlamarWsp.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        String myphonenumber = "+56983603323";
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("Phone:" +myphonenumber ));
+        startActivity(intent);
 
+
+    }
+});
 
     }
 }
