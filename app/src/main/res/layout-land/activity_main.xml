@@ -48,7 +48,7 @@
         tools:textColor="@color/paleta4" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageBtn"
         android:layout_width="288dp"
         android:layout_height="194dp"
         android:backgroundTint="@color/paleta3"

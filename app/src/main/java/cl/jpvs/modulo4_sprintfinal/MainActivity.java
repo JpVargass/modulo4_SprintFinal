@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
        binding = ActivityMainBinding.inflate(getLayoutInflater());  //paso 2;
         setContentView(binding.getRoot());
 
- binding.imageButton.setOnClickListener(new View.OnClickListener() {
+
+ binding.imageBtn.setOnClickListener(new View.OnClickListener() {
      @Override
      public void onClick(View v) {
          Intent activityMenu = new Intent(getBaseContext(), SecondActivity.class);
@@ -26,13 +27,6 @@ public class MainActivity extends AppCompatActivity {
      }
  });
 
- binding.imageButton2.setOnClickListener(new View.OnClickListener() {
-     @Override
-     public void onClick(View v) {
-         Intent activityMenu = new Intent(getBaseContext(), SecondActivity.class);
-         startActivity(activityMenu);
-     }
- });
 
     }
 }

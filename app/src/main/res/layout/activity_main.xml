@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.91" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageBtn"
         android:layout_width="358dp"
         android:layout_height="333dp"
         android:backgroundTint="@color/paleta3"
@@ -54,8 +54,8 @@
         android:text="Soy Juan Pablo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintStart_toStartOf="@+id/imageBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
