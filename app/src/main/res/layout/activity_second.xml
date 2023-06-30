@@ -4,26 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/paleta1"
     tools:context=".SecondActivity">
 
     <Button
         android:id="@+id/btnLinkedin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
         android:backgroundTint="@color/paleta2_5"
         android:text="Linkedin"
         android:textColor="@color/paleta4"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="200dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnLlamarWsp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/paleta2_5"
-        android:text="Linkedin"
+        android:text="Llamar"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintEnd_toEndOf="@+id/btnLinkedin"
+        app:layout_constraintStart_toStartOf="@+id/btnLinkedin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLinkedin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
