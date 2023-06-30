@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleta1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="317dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/paleta2_4"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewYearText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623"
+        tools:textColor="@color/paleta4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="119dp"
+        android:background="@color/paleta2_5"
+        android:gravity="center"
+        android:text="Nivel de Motivación"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="293dp"
+        tools:textColor="@color/paleta4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="318dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="412dp"
+        android:background="@color/paleta2_5"
+        android:gravity="center"
+        android:text="Altamente comprometido"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        tools:layout_editor_absoluteY="296dp"
+        tools:textColor="@color/paleta4" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="288dp"
+        android:layout_height="194dp"
+        android:backgroundTint="@color/paleta3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewYearText"
+        android:layout_width="413dp"
+        android:layout_height="98dp"
+        android:background="@color/paleta2_4"
+        android:gravity="center"
+        android:text="Años de Experiencia"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="194dp"
+        tools:textColor="@color/paleta4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
