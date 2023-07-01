@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
     android:background="@color/paleta1"
     tools:context=".SecondActivity">
 
@@ -52,7 +53,7 @@
         tools:textColor="@color/paleta4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -61,4 +62,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="109dp"
+        android:layout_height="78dp"
+        android:text="New Mensaje"
+        android:textColor="#D61111"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMsjEmail"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="543dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
