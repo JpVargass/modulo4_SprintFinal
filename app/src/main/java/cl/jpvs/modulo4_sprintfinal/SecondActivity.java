@@ -39,19 +39,20 @@ public class SecondActivity extends AppCompatActivity {
 
             }
         });
+        cl.jpvs.modulo4_sprintfinal.databinding.ActivitySecondBinding finalBinding = binding;
         binding.btnCorreo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String msj = binding.editTextTextMsjEmail.getText().toString();
-
+                String message = finalBinding.editTextTextMsjEmail.getText().toString();
+                String[] to ={"jpvargass@gmail.com"};
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
 
-                intent.putExtra(Intent.EXTRA_EMAIL, "jpvargass@gmail.com");
+                intent.putExtra(Intent.EXTRA_EMAIL, to);
                 intent.putExtra(Intent.EXTRA_CC, "");
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Asunto del mensaje");
-                intent.putExtra(Intent.EXTRA_TEXT, msj);
+                intent.putExtra(Intent.EXTRA_TEXT, message);
 
                 startActivity(Intent.createChooser(intent, "Enviar correo electrónico a través de: "));
 

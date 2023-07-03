@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="CONTACTARME"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -70,15 +70,21 @@
         android:text="New Mensaje"
         android:textColor="#D61111"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="452dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.638"
+        tools:layout_editor_absoluteX="39dp" />
 
     <EditText
         android:id="@+id/editTextTextMsjEmail"
         android:layout_width="251dp"
         android:layout_height="54dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/paleta3"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="543dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
